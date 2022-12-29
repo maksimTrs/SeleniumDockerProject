@@ -3,23 +3,39 @@ package tests;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 
 import java.net.MalformedURLException;
 
+import static tests.LocalDriverManager.BrowserType.LOCAL;
 import static tests.LocalDriverManager.BrowserType.SELENIUM_GRID;
 
 public class BaseTest {
 
-    private static final String HOST = "localhost";
     protected WebDriver driver;
 
     @BeforeTest
-    @Parameters({"browserType"})
-    protected void setUp(String browserType) throws MalformedURLException {
+    // @Parameters({"browserType"})
+    protected void setUp() throws MalformedURLException {
         //WebDriverManager.chromedriver().setup();
+
+
+        String browserType = "CHROME";
+        String host = "localhost";
+
         LocalDriverManager localDriverManager = new LocalDriverManager();
-        driver = localDriverManager.createInstance(browserType, SELENIUM_GRID, HOST);
+
+        if (System.getProperty("HUB_HOST") != null) {
+            host = System.getProperty("HUB_HOST");
+        }
+
+        if (System.getProperty("BROWSER") != null &&
+                System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
+            browserType = "FIREFOX";
+        }
+        driver = localDriverManager.createInstance(browserType, SELENIUM_GRID, host);
+
+
+       // driver = localDriverManager.createInstance(System.getProperty("BROWSER"), LOCAL, System.getProperty("HOST"));
 
         // driver = WebDriverManager.chromedriver().create();  //new ChromeDriver();
 

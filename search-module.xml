@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="search-module" parallel="tests" thread-count="2">
-    <parameter name="browserType" value="CHROME"/>
+<!--    <parameter name="browserType" value="CHROME"/>-->
     <test name="search-test-java">
         <parameter name="keyword" value="java"/>
         <classes>
