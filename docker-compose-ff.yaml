@@ -29,17 +29,7 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_MAX_INSTANCES=4
       - SE_NODE_MAX_SESSIONS=4
-  seleniumdockerproject_1:
-    build: .
-    container_name: seleniumdockerproject-container1
-    environment:
-      - BROWSER=CHROME
-      - HUB_HOST=hub
-      - MODULE=search-module.xml
-    depends_on:
-      #- firefox
-      - chrome
-  seleniumdockerproject_2:
+  seleniumdockerproject_ff:
     build: .
     container_name: seleniumdockerproject-container2
     environment:
@@ -48,8 +38,7 @@ services:
       - MODULE=search-module.xml
     depends_on:
       - firefox
-      #- chrome
+      - chrome
 
-# docker compose up
-# docker compose up  -d --scale chrome=3 --scale firefox=3
-# mvn clean package -DskipTests
+#  docker compose -f docker-compose-ff.yaml up
+#  docker compose -f docker-compose-ff.yaml down

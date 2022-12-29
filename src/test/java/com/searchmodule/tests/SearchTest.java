@@ -18,6 +18,6 @@ public class SearchTest extends BaseTest {
         searchPage.goToVideos();
         int size = searchPage.getResult();
 
-        Assert.assertTrue(size > 1);
+        Assert.assertTrue(size > 3);
     }
 }

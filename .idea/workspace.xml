@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f303c57c-447e-44e7-b02a-998f249647b1" name="Changes" comment="Add new tests with Selenium Grid part 2">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="f303c57c-447e-44e7-b02a-998f249647b1" name="Changes" comment="Refactoring 1.0">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose-ff.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-flight-module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-flight-module.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search-module.xml" beforeDir="false" afterPath="$PROJECT_DIR$/search-module.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/searchmodule/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/searchmodule/tests/SearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +52,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.E:/MAX/IT/1Coding/IntelliJ_IDEA_Projects/SeleniumDockerProject/book-flight-module.xml">
     <configuration name="E:/MAX/IT/1Coding/IntelliJ_IDEA_Projects/SeleniumDockerProject/book-flight-module.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumDockerProject" />
@@ -130,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672264622263</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactoring 1.0">
+      <created>1672336759614</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672336759614</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +155,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add new tests with Selenium Grid part" />
     <MESSAGE value="Add new tests with Selenium Grid part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new tests with Selenium Grid part 2" />
+    <MESSAGE value="Refactoring 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring 1.0" />
   </component>
 </project>
