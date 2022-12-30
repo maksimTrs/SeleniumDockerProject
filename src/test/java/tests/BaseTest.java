@@ -20,7 +20,7 @@ public class BaseTest {
 
 
         String browserType = "CHROME";
-        String host = "localhost";
+        String host = "localhost"; // hub - for GRID
 
         LocalDriverManager localDriverManager = new LocalDriverManager();
 

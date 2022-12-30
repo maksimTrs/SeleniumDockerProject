@@ -16,8 +16,8 @@ services:
       - SE_EVENT_BUS_HOST=hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_NODE_MAX_INSTANCES=4
-      - SE_NODE_MAX_SESSIONS=4
+      - SE_NODE_MAX_INSTANCES=6
+      - SE_NODE_MAX_SESSIONS=6
   firefox:
     image: selenium/node-firefox:4.1.0
     shm_size: 2gb
@@ -27,8 +27,8 @@ services:
       - SE_EVENT_BUS_HOST=hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_NODE_MAX_INSTANCES=4
-      - SE_NODE_MAX_SESSIONS=4
+      - SE_NODE_MAX_INSTANCES=6
+      - SE_NODE_MAX_SESSIONS=6
   seleniumdockerproject_chrome:
     build: .
     container_name: searchmodulecontainer_chrome
@@ -53,6 +53,18 @@ services:
     depends_on:
       - firefox
       #- chrome
+  bookflight_test:
+    build: .
+    container_name: bookflight_container
+    volumes:
+      - E:\MAX\IT\UDEMY\Selenium_WebDriver_with_Docker_Jenkins_AWS\test-output-bookFlight:/usr/share/udemy/test-output
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - MODULE=book-flight-module.xml
+    depends_on:
+      - firefox
+      - chrome
 
 # docker compose up
 # docker compose up  -d --scale chrome=3 --scale firefox=3

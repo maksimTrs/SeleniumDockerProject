@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f303c57c-447e-44e7-b02a-998f249647b1" name="Changes" comment="Refactoring 2.0 - update docker compose file">
+    <list default="true" id="f303c57c-447e-44e7-b02a-998f249647b1" name="Changes" comment="Refactoring 2.0 - update docker compose file 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672426723719</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactoring 2.0 - update docker compose file 2">
+      <created>1672427701966</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672427701966</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +177,7 @@
     <MESSAGE value="Refactoring 1.0" />
     <MESSAGE value="Refactoring 2.0 - add docker compose" />
     <MESSAGE value="Refactoring 2.0 - update docker compose file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring 2.0 - update docker compose file" />
+    <MESSAGE value="Refactoring 2.0 - update docker compose file 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring 2.0 - update docker compose file 2" />
   </component>
 </project>
