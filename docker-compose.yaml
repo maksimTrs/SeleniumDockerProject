@@ -32,6 +32,8 @@ services:
   seleniumdockerproject_1:
     build: .
     container_name: seleniumdockerproject-container1
+    volumes:
+      - E:\MAX\IT\UDEMY\Selenium_WebDriver_with_Docker_Jenkins_AWS\test-output:/usr/share/udemy/test-output
     environment:
       - BROWSER=CHROME
       - HUB_HOST=hub
@@ -42,6 +44,8 @@ services:
   seleniumdockerproject_2:
     build: .
     container_name: seleniumdockerproject-container2
+    volumes:
+      - E:\MAX\IT\UDEMY\Selenium_WebDriver_with_Docker_Jenkins_AWS\test-output2:/usr/share/udemy/test-output
     environment:
       - BROWSER=FIREFOX
       - HUB_HOST=hub

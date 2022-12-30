@@ -33,6 +33,7 @@ public class BaseTest {
             browserType = "FIREFOX";
         }
         driver = localDriverManager.createInstance(browserType, SELENIUM_GRID, host);
+        System.out.println("+++++ AT Test was started for browser = " + browserType + " +++++");
 
 
        // driver = localDriverManager.createInstance(System.getProperty("BROWSER"), LOCAL, System.getProperty("HOST"));

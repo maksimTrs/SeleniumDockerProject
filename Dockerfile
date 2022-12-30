@@ -12,3 +12,5 @@ ADD search-module.xml        search-module.xml
 
 ENTRYPOINT java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -DBROWSER=$BROWSER -DHUB_HOST=$HUB_HOST org.testng.TestNG $MODULE
 #../book-flight-module.xml
+# docker run --rm  -e MODULE=search-module.xml  -e HUB_HOST=192.168.0.191 -v "E:\MAX\IT\UDEMY\Selenium WebDriver with D
+  #ocker, Jenkins & AWS\test-output:/usr/share/udemy/test-output"  9ce72fae8b8b
