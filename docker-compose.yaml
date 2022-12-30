@@ -29,9 +29,9 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_MAX_INSTANCES=4
       - SE_NODE_MAX_SESSIONS=4
-  seleniumdockerproject_1:
+  seleniumdockerproject_chrome:
     build: .
-    container_name: seleniumdockerproject-container1
+    container_name: searchmodulecontainer_chrome
     volumes:
       - E:\MAX\IT\UDEMY\Selenium_WebDriver_with_Docker_Jenkins_AWS\test-output:/usr/share/udemy/test-output
     environment:
@@ -41,9 +41,9 @@ services:
     depends_on:
       #- firefox
       - chrome
-  seleniumdockerproject_2:
+  seleniumdockerproject_firefox:
     build: .
-    container_name: seleniumdockerproject-container2
+    container_name: searchmodulecontainer_firefox
     volumes:
       - E:\MAX\IT\UDEMY\Selenium_WebDriver_with_Docker_Jenkins_AWS\test-output2:/usr/share/udemy/test-output
     environment:
