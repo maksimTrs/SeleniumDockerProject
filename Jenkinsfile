@@ -56,6 +56,7 @@ pipeline {
                     //sh
 			        bat "docker login --username=${user} --password=${pass}"
 			        bat "docker push roronoazorroippo/selenium-docker:${BUILD_NUMBER}"
+			        bat "docker push roronoazorroippo/selenium-docker:latest"
 			    }
             }
         }
