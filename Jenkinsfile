@@ -1,4 +1,3 @@
-/*
 pipeline {
     agent none
     stages {
@@ -31,9 +30,10 @@ pipeline {
             }
         }
     }
-} */
+}
 
 
+/*
 pipeline {
     // master executor should be set to 0
     agent any
@@ -60,4 +60,4 @@ pipeline {
             }
         }
     }
-}
+} */
