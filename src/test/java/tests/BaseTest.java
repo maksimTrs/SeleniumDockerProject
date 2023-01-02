@@ -6,7 +6,6 @@ import org.testng.annotations.BeforeTest;
 
 import java.net.MalformedURLException;
 
-import static tests.LocalDriverManager.BrowserType.LOCAL;
 import static tests.LocalDriverManager.BrowserType.SELENIUM_GRID;
 
 public class BaseTest {
@@ -36,7 +35,7 @@ public class BaseTest {
         System.out.println("+++++ AT Test was started for browser = " + browserType + " +++++");
 
 
-       // driver = localDriverManager.createInstance(System.getProperty("BROWSER"), LOCAL, System.getProperty("HOST"));
+        // driver = localDriverManager.createInstance(System.getProperty("BROWSER"), LOCAL, System.getProperty("HOST"));
 
         // driver = WebDriverManager.chromedriver().create();  //new ChromeDriver();
 

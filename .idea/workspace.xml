@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f303c57c-447e-44e7-b02a-998f249647b1" name="Changes" comment="update Jenkins file 8">
+    <list default="true" id="f303c57c-447e-44e7-b02a-998f249647b1" name="Changes" comment="update BaseTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672669331339</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update Jenkins file 9">
+      <created>1672674806011</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1672674806011</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update BaseTest.java">
+      <created>1672674851101</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672674851101</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,7 +260,9 @@
     <MESSAGE value="update Jenkins file 6" />
     <MESSAGE value="update Jenkins file 7" />
     <MESSAGE value="update Jenkins file 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Jenkins file 8" />
+    <MESSAGE value="update Jenkins file 9" />
+    <MESSAGE value="update BaseTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="update BaseTest.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

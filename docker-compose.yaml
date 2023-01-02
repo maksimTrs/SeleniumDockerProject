@@ -21,8 +21,8 @@ services:
   firefox:
     image: selenium/node-firefox:4.1.0
     shm_size: 2gb
-    #volumes:
-      #- ./downloads:/home/seluser/Downloads
+      #volumes:
+    #- ./downloads:/home/seluser/Downloads
     depends_on:
       - hub
     environment:
