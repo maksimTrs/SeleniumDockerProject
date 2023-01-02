@@ -6,7 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'maven:3.6.1-jdk-8-alpine'
-                    args '-v /root/.m2:/root/.m2'
+                   args '-v $HOME/.m2:/root/.m2'
                 }
             }
             steps {
@@ -56,7 +56,7 @@ pipeline {
                     //sh
 			        bat "docker login --username=${user} --password=${pass}"
 			        bat "docker push roronoazorroippo/selenium-docker:${BUILD_NUMBER}"
-			       // bat "docker push roronoazorroippo/selenium-docker:latest"
+			        bat "docker push roronoazorroippo/selenium-docker:latest"
 			    }
             }
         }
