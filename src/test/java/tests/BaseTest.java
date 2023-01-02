@@ -40,7 +40,7 @@ public class BaseTest {
 
         // driver = WebDriverManager.chromedriver().create();  //new ChromeDriver();
 
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
     }
 
 
