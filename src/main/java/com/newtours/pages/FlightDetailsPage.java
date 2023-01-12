@@ -28,6 +28,7 @@ public class FlightDetailsPage {
         this.wait.until(ExpectedConditions.elementToBeClickable(passengers));
         Select select = new Select(passengers);
         select.selectByValue(noOfPassengers);
+
     }
 
     public void goToFindFlightsPage() {

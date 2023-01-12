@@ -21,7 +21,7 @@ services:
   firefox:
     image: selenium/node-firefox:4.1.0
     shm_size: 2gb
-      #volumes:
+    #volumes:
     #- ./downloads:/home/seluser/Downloads
     depends_on:
       - hub
@@ -32,7 +32,7 @@ services:
       - SE_NODE_MAX_INSTANCES=6
       - SE_NODE_MAX_SESSIONS=6
   seleniumdockerproject_chrome:
-    build: .
+    image: roronoazorroippo/seleniumdockerproject:latest
     container_name: searchmodulecontainer_chrome
     volumes:
       - E:\MAX\IT\UDEMY\Selenium_WebDriver_with_Docker_Jenkins_AWS\test-output:/usr/share/udemy/test-output
@@ -44,7 +44,7 @@ services:
       #- firefox
       - chrome
   seleniumdockerproject_firefox:
-    build: .
+    image: roronoazorroippo/seleniumdockerproject:latest
     container_name: searchmodulecontainer_firefox
     volumes:
       - E:\MAX\IT\UDEMY\Selenium_WebDriver_with_Docker_Jenkins_AWS\test-output2:/usr/share/udemy/test-output
@@ -56,7 +56,7 @@ services:
       - firefox
       #- chrome
   bookflight_test:
-    build: .
+    image: roronoazorroippo/seleniumdockerproject:latest
     container_name: bookflight_container
     volumes:
       - E:\MAX\IT\UDEMY\Selenium_WebDriver_with_Docker_Jenkins_AWS\test-output-bookFlight:/usr/share/udemy/test-output
